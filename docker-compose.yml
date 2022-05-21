@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  mongo:
+    container_name: mongo-git-ranking-commits
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: toor
+    ports:
+      - "27017:27017"
+  redis:
+    container_name: redis-git-ranking-commits
+    image: redis
+    command: redis-server
+    ports:
+      - "6379:6379"

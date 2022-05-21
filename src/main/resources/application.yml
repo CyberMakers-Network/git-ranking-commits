@@ -1,0 +1,25 @@
+### SERVER ###
+server:
+  port: ${server.port:8080}
+
+### CONFIGURATION LOG ###
+logging:
+  level:
+    root: INFO
+    com:
+      example: TRACE
+
+### SPRING ###
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+  data:
+    mongodb:
+      uri: ${mongo.url:mongodb://root:toor@localhost:27017/admin}
+      auto-index-creation: true
+
+### PROPERTIES ###
+properties:
+  github:
+    url: ${github.url:http://github.com/}
