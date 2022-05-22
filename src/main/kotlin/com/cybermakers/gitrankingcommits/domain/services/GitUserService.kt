@@ -4,4 +4,5 @@ import com.cybermakers.gitrankingcommits.domain.entities.GitUser
 
 interface GitUserService {
     fun createGitUser(gitUser: GitUser): GitUser
+    fun getByNickname(nickname: String): GitUser
 }

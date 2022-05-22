@@ -74,9 +74,6 @@ dependencies {
 
 	// Persistance
 	implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
-	implementation("org.springframework.boot:spring-boot-starter-data-redis")
-	implementation("redis.clients:jedis")
-	implementation("io.lettuce:lettuce-core")
 	implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
 
 	//Web
